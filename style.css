@@ -23,7 +23,7 @@ h1:hover {
     box-shadow: 0px 0px 80px 10px white;
 }
 
-input.data-input, .result-box {
+textarea.data-input, .result-box {
     width: 90%;
     padding: 12px;
     border-radius: 12px;
@@ -35,26 +35,39 @@ input.data-input, .result-box {
     box-shadow: 0px 0px 50px 10px white;
 }
 
-input.data-input:hover {
+textarea.data-input {
+    resize: vertical;
+}
+
+textarea.data-input:hover {
     border: 2px solid lightgrey;
     box-shadow: 0px 0px 80px 10px white;
 }
 
-input.data-input:active {
+textarea.data-input:active {
     transform: scale(0.95);
 }
 
-input.data-input:focus {
+textarea.data-input:focus {
     border: 2px solid grey;
 }
 
 .result-box {
     background-color: white;
     padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .result-box:hover {
     box-shadow: 0px 0px 80px 10px white;
+}
+
+.result-table {
+    font-family: Arial;
+    font-size: 13px;
 }
 
 .btn-class-name {

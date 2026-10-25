@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F.R.U.N.K.</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
+    <script defer src="script.js?v=20261024-1948"></script>
 </head>
 <body>
 
     <h1>F.R.U.N.K.</h1>
-    <input type="text" class="data-input" placeholder="Paste data here...">
+    <textarea id="data-input" class="data-input" rows="1" placeholder="Paste data here..."></textarea>
 
-    <button class="btn-class-name">
+    <button id="go-go-go" class="btn-class-name">
         <span class="back"></span>
         <span class="front"></span>
     </button>
 
     <div id="result" class="result-box">
-        <h2>Box</h2>
-        <p>This is the result of the Frunkering.</p>
+        <p>Results will show up here.</p>
     </div>
 
     <button class="btn-class-name second-button" onclick="document.getElementById('slider').style.display='block';">
